@@ -9,12 +9,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class AuthorCrudOperations implements CrudOperations<Author>{
     final private DatabaseConnection databaseConnection = DatabaseConnection.getInstance();
     public static Author createAuthor(ResultSet resultSet) throws SQLException {
         return new Author(
-            resultSet.getString("id"),
+            UUID.fromString(resultSet.getString("id")),
             resultSet.getString("name"),
             Sex.valueOf(resultSet.getString("sex"))
         );
@@ -64,7 +65,11 @@ public class AuthorCrudOperations implements CrudOperations<Author>{
     }
 
     @Override
-    public Author delete(Author toDelete) {
-        return null;
+    public Author delete(Author toDelete) throws SQLException {
+        String query = "DELETE FROM \"author\" WHERE \"id\"=?;";
+        PreparedStatement statement = databaseConnection.getConnection().prepareStatement(query);
+        statement.setObject(1, toDelete.getId());
+        statement.executeUpdate();
+        return toDelete;
     }
 }

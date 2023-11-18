@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="601fdced-441b-497e-9a31-b0c895cc34c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Sanda/AuthorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/AuthorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/AuthorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/model/Author.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/repository/AuthorCrudOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/AuthorCrudOperations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/repository/CrudOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/CrudOperations.java" afterDir="false" />
     </list>
@@ -99,7 +97,7 @@
       <updated>1700285389978</updated>
       <workItem from="1700285391048" duration="27000" />
       <workItem from="1700285789426" duration="680000" />
-      <workItem from="1700287011353" duration="14012000" />
+      <workItem from="1700287011353" duration="15033000" />
     </task>
     <servers />
   </component>

@@ -12,10 +12,19 @@ public class AuthorTest {
         AuthorCrudOperations authorCrudOperations = new AuthorCrudOperations();
 
         //Find all test
+        List<Author> authors = authorCrudOperations.findAll();
+
+        //delete test
+        authors.forEach(el -> {
+            try {
+                System.out.println("Deleted: " + authorCrudOperations.delete(el));
+            } catch (SQLException e) {
+                System.out.println(e.getMessage());
+            }
+        });
         System.out.println(authorCrudOperations.findAll());
 
         //save test
-    /*
         Author author1 = new Author(null, "Author1", Sex.M);
         System.out.println(authorCrudOperations.save(author1));
 
@@ -26,6 +35,5 @@ public class AuthorTest {
 
         //Find all test
         System.out.println(authorCrudOperations.findAll());
-    */
     }
 }
