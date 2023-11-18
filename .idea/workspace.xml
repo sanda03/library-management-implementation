@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="601fdced-441b-497e-9a31-b0c895cc34c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/BookCrudOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/create_author.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/create_book.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/984f06d0-ef33-452b-9ead-d989438e10f1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/984f06d0-ef33-452b-9ead-d989438e10f1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/model/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/model/Topic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/repository/AuthorCrudOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/AuthorCrudOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/repository/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/migration.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/migration.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/repository/BookCrudOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/BookCrudOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/migration.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/init_db.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "TD1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -100,7 +99,8 @@
       <updated>1700285389978</updated>
       <workItem from="1700285391048" duration="27000" />
       <workItem from="1700285789426" duration="680000" />
-      <workItem from="1700287011353" duration="19816000" />
+      <workItem from="1700287011353" duration="20973000" />
+      <workItem from="1700311792289" duration="800000" />
     </task>
     <servers />
   </component>
