@@ -7,7 +7,7 @@ import java.util.List;
 
 @Data
 public class Book {
-    private String id, name;
+    private String id, bookName;
     private int pageNumbers;
     private Date releaseDate;
     private List<Topic> topics;
