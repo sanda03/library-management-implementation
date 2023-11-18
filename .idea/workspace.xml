@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="601fdced-441b-497e-9a31-b0c895cc34c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Sanda/model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Sanda/model/Topic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/CrudOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/AuthorCrudOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/DatabaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/PostgresqlConf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/model/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/model/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/model/User.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,6 +57,31 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="DB_PASSWORD" value="123456" />
+        <env name="DB_USERNAME" value="postgres" />
+        <env name="DB_URL" value="jdbc:postgresql://localhost:5432/library_management" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="Sanda.Main" />
+      <module name="LibraryManagementImplementation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sanda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,7 +92,7 @@
       <updated>1700285389978</updated>
       <workItem from="1700285391048" duration="27000" />
       <workItem from="1700285789426" duration="680000" />
-      <workItem from="1700287011353" duration="4652000" />
+      <workItem from="1700287011353" duration="6366000" />
     </task>
     <servers />
   </component>
