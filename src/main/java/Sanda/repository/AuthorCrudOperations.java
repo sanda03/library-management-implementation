@@ -23,7 +23,7 @@ public class AuthorCrudOperations implements CrudOperations<Author>{
 
     @Override
     public List<Author> findAll(){
-        final String query = "SELECT * from \"author\";";
+        final String query = Utils.selectAllQuery("author");
         List<Author> authors = new ArrayList<>();
         Connection connection = databaseConnection.getConnection();
 
@@ -71,5 +71,14 @@ public class AuthorCrudOperations implements CrudOperations<Author>{
         statement.setObject(1, toDelete.getId());
         statement.executeUpdate();
         return toDelete;
+    }
+
+    public Author findOne(UUID id) throws SQLException {
+        String query = "SELECT * FROM \"author\" WHERE \"id\"=?;";
+        PreparedStatement statement = databaseConnection.getConnection().prepareStatement(query);
+        statement.setObject(1, id);
+        ResultSet resultSet = statement.executeQuery();
+        resultSet.next();
+        return createAuthor(resultSet);
     }
 }

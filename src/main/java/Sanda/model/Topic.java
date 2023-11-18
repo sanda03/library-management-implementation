@@ -1,7 +1,7 @@
 package Sanda.model;
 
 public enum Topic {
-    COMIC,
+    COMEDY,
     ROMANCE,
     OTHER
 }

@@ -5,6 +5,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Utils {
+    public static String selectAllQuery(String tableName){
+        return "SELECT * FROM \""+ tableName + "\"";
+    }
     public static String insertQuery(String tableName, List<String> columns){
         String insertColumns = columns.stream()
             .map(el -> "\"" + el + "\"")
