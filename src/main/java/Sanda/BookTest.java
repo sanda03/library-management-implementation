@@ -17,5 +17,12 @@ public class BookTest {
         System.out.println(bookCrudOperations.save(
             new Book("", "Nos coeurs en désaccord", 227, Date.valueOf("2021-01-01"), List.of(Topic.ROMANCE), null)
         ));
+
+        //Save all book test
+        List<Book> result = bookCrudOperations.saveAll(List.of(
+            new Book("", "book8", 255, Date.valueOf("2021-01-01"), List.of(Topic.ROMANCE, Topic.OTHER), null),
+            new Book("", "book5", 255, Date.valueOf("2021-08-01"), List.of(Topic.OTHER), null)
+        ));
+        result.forEach(System.out::println);
     }
 }
