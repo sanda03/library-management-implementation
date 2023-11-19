@@ -11,10 +11,16 @@ public class BookTest {
     private static BookCrudOperations bookCrudOperations = new BookCrudOperations();
     public static void test(){
         //find all test
-        bookCrudOperations.findAll().forEach(System.out::println);
+        List<Book> books = bookCrudOperations.findAll();
+        books.forEach(el -> System.out.println("[FIND]: "  + el));
+
+        //delete test
+        books.forEach(el -> {
+            System.out.println("[DELETE]: " + bookCrudOperations.delete(el));
+        });
 
         //insert book test
-        System.out.println(bookCrudOperations.save(
+        System.out.println("[CREATE]: " + bookCrudOperations.save(
             new Book("", "Nos coeurs en désaccord", 227, Date.valueOf("2021-01-01"), List.of(Topic.ROMANCE), null)
         ));
 
@@ -23,6 +29,10 @@ public class BookTest {
             new Book("", "book8", 255, Date.valueOf("2021-01-01"), List.of(Topic.ROMANCE, Topic.OTHER), null),
             new Book("", "book5", 255, Date.valueOf("2021-08-01"), List.of(Topic.OTHER), null)
         ));
-        result.forEach(System.out::println);
+        result.forEach(el -> System.out.println("[CREATE]: " + el));
+
+        //last find
+        List<Book> booksTwo = bookCrudOperations.findAll();
+        booksTwo.forEach(el -> System.out.println("[FIND]: "  + el));
     }
 }
