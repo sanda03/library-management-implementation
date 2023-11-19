@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="601fdced-441b-497e-9a31-b0c895cc34c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Sanda/SubscriberTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Sanda/model/Subscriber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/SubscriberCrudOperations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/AuthorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/AuthorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/BookTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/repository/BookCrudOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/BookCrudOperations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +110,7 @@
       <workItem from="1700315567715" duration="1801000" />
       <workItem from="1700317625535" duration="364000" />
       <workItem from="1700330346911" duration="182000" />
-      <workItem from="1700395643280" duration="7007000" />
+      <workItem from="1700395643280" duration="7090000" />
     </task>
     <servers />
   </component>

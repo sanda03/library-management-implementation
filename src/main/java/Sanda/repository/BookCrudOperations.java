@@ -12,7 +12,6 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class BookCrudOperations implements CrudOperations<Book> {
-    private static final AuthorCrudOperations authorCrudOperations = new AuthorCrudOperations();
     private final DatabaseConnection databaseConnection = DatabaseConnection.getInstance();
     private String toTopicType(List<Topic> topics){
         return topics.toString().replace("[","{").replace("]","}");
