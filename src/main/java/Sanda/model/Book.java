@@ -11,7 +11,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class Book {
     private String id, bookName;
-    private int pageNumbers;
+    private long pageNumbers;
     private Date releaseDate;
     private List<Topic> topics;
     private Author author;

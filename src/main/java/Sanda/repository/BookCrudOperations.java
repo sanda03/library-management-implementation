@@ -8,6 +8,8 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class BookCrudOperations implements CrudOperations<Book> {
     private static final AuthorCrudOperations authorCrudOperations = new AuthorCrudOperations();
@@ -54,11 +56,27 @@ public class BookCrudOperations implements CrudOperations<Book> {
 
     @Override
     public List<Book> saveAll(List<Book> toSave) {
-        return null;
+        List<Book> results = new ArrayList<>();
+        toSave.forEach(el -> results.add(save(el)));
+        return results;
     }
 
     @Override
     public Book save(Book toSave){
+        String insertValues = Stream.of("book_name", "page_numbers", "release_date","topics")
+                .map(el -> "\"" + el + "\"").collect(Collectors.joining(","));
+        String insertQuery = "INSERT INTO \"book\"(" + insertValues + ") VALUES (?,?,?,'" + toTopicType(toSave.getTopics()) + "');";
+        try{
+            PreparedStatement preparedStatement = databaseConnection.getConnection().prepareStatement(insertQuery);
+            preparedStatement.setString(1,toSave.getBookName());
+            preparedStatement.setLong(2,toSave.getPageNumbers());
+            preparedStatement.setDate(3,toSave.getReleaseDate());
+            preparedStatement.executeUpdate();
+            List<Book> books = findAll();
+            return books.get(books.size() - 1);
+        }catch (SQLException error){
+            System.out.println(error.getMessage());
+        }
         return null;
     }
 

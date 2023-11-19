@@ -80,14 +80,16 @@ public class AuthorCrudOperations implements CrudOperations<Author>{
 
     public static Author findOne(String id){
         String query = "SELECT * FROM \"author\" WHERE \"id\"=?;";
-        try {
-            PreparedStatement statement = databaseConnection.getConnection().prepareStatement(query);
-            statement.setString(1, id);
-            ResultSet resultSet = statement.executeQuery();
-            resultSet.next();
-            return createAuthor(resultSet);
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
+        if(id != null){
+            try {
+                PreparedStatement statement = databaseConnection.getConnection().prepareStatement(query);
+                statement.setString(1, id);
+                ResultSet resultSet = statement.executeQuery();
+                resultSet.next();
+                return createAuthor(resultSet);
+            } catch (SQLException e) {
+                System.out.println(e.getMessage());
+            }
         }
         return null;
     }
