@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="601fdced-441b-497e-9a31-b0c895cc34c2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/create_table_subscriber.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/create_type_topic.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/984f06d0-ef33-452b-9ead-d989438e10f1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/984f06d0-ef33-452b-9ead-d989438e10f1/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/984f06d0-ef33-452b-9ead-d989438e10f1/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/984f06d0-ef33-452b-9ead-d989438e10f1/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/984f06d0-ef33-452b-9ead-d989438e10f1/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/create_author.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/create_author.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/create_book.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/create_book.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/repository/BookCrudOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/BookCrudOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/create_author.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/create_table_author.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/create_book.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/create_table_book.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/init_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/use_extension.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +55,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "TD1",
+    "last_opened_file_path": "/home/ricka/IdeaProjects/LibraryManagementImplementation",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,7 +74,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
         <env name="DB_PASSWORD" value="123456" />
@@ -79,9 +93,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="f62b0c9d-d019-459d-8eeb-8331b6dffac5/role/test.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Database Script.test.sql" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Database Script.test.sql" />
       </list>
     </recent_temporary>
   </component>
@@ -96,7 +120,11 @@
       <workItem from="1700285391048" duration="27000" />
       <workItem from="1700285789426" duration="680000" />
       <workItem from="1700287011353" duration="20973000" />
-      <workItem from="1700311792289" duration="2266000" />
+      <workItem from="1700311792289" duration="3172000" />
+      <workItem from="1700315567715" duration="1801000" />
+      <workItem from="1700317625535" duration="364000" />
+      <workItem from="1700330346911" duration="182000" />
+      <workItem from="1700395643280" duration="1031000" />
     </task>
     <servers />
   </component>

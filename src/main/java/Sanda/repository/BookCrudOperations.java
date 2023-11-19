@@ -12,7 +12,13 @@ import java.util.UUID;
 public class BookCrudOperations implements CrudOperations<Book> {
     private final AuthorCrudOperations authorCrudOperations = new AuthorCrudOperations();
     private final DatabaseConnection databaseConnection = DatabaseConnection.getInstance();
-
+    private String toTopicType(List<Topic> topics){
+        StringBuilder result = new StringBuilder("ARRAY['" + topics.get(0).toString() + "'::\"topic\"");
+        for (int i = 1; i < topics.size() ; i++) {
+            result.append(",'").append(topics.get(i)).append("'::\"topic\"");
+        }
+        return  result.append("]").toString();
+    }
     private Book createBook(ResultSet resultSet) throws SQLException {
         Author author = authorCrudOperations.findOne((UUID) resultSet.getObject("id_author"));
         String[] topicsArray = (String[]) resultSet.getArray("topics").getArray();
@@ -55,32 +61,24 @@ public class BookCrudOperations implements CrudOperations<Book> {
 
     @Override
     public Book save(Book toSave) throws SQLException {
-        String query = Utils.insertQuery(
-    "book",
-            List.of(
-                "book_name",
-                "page_numbers",
-                "release_date",
-                "topics",
-                "id_author"
-            )
-        );
+        return null;
+    }
 
+/*
+    @Override
+    public Book save(Book toSave) throws SQLException {
+        String query = "INSERT INTO \"book\"(\"book_name\", \"page_numbers\", \"release_date\", \"topics\") VALUE (?,?,?)";
         PreparedStatement preparedStatement = databaseConnection.getConnection().prepareStatement(query);
         preparedStatement.setString(1, toSave.getBookName());
         preparedStatement.setInt(2, toSave.getPageNumbers());
         preparedStatement.setDate(3, toSave.getReleaseDate());
-/*
-        preparedStatement.setArray(2, toSave.getTopics().toArray());
-*/
-
+        preparedStatement.setString(4, toTopicType(toSave.getTopics()));
+        preparedStatement.setObject(5, toSave.getAuthor().getId());
         preparedStatement.executeUpdate();
-/*
-        List<Author> authors = findAll();
-        return authors.get(authors.size() - 1);
-*/
-        return null;
+
+        return toSave;
     }
+*/
 
     @Override
     public Book delete(Book toDelete) throws SQLException {
