@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AuthorCrudOperations implements CrudOperations<Author>{
-    final private DatabaseConnection databaseConnection = DatabaseConnection.getInstance();
+    final static private DatabaseConnection databaseConnection = DatabaseConnection.getInstance();
     public static Author createAuthor(ResultSet resultSet) throws SQLException {
         return new Author(
             resultSet.getString("id"),
@@ -71,13 +71,14 @@ public class AuthorCrudOperations implements CrudOperations<Author>{
             PreparedStatement statement = databaseConnection.getConnection().prepareStatement(query);
             statement.setString(1, toDelete.getId());
             statement.executeUpdate();
+            return toDelete;
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-        return toDelete;
+        return null;
     }
 
-    public Author findOne(String id){
+    public static Author findOne(String id){
         String query = "SELECT * FROM \"author\" WHERE \"id\"=?;";
         try {
             PreparedStatement statement = databaseConnection.getConnection().prepareStatement(query);

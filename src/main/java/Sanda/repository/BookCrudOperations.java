@@ -6,20 +6,20 @@ import Sanda.model.Topic;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import java.util.UUID;
 
 public class BookCrudOperations implements CrudOperations<Book> {
-    private final AuthorCrudOperations authorCrudOperations = new AuthorCrudOperations();
+    private static final AuthorCrudOperations authorCrudOperations = new AuthorCrudOperations();
     private final DatabaseConnection databaseConnection = DatabaseConnection.getInstance();
     private String toTopicType(List<Topic> topics){
         return topics.toString().replace("[","{").replace("]","}");
     }
     private Book createBook(ResultSet resultSet){
         try {
-            Author author = authorCrudOperations.findOne(resultSet.getString("id_author"));
-            List<Topic> topics = new ArrayList<>();
-            String[] topicsArray = (String[]) resultSet.getArray("topics").getArray();
+            Author author = AuthorCrudOperations.findOne(resultSet.getString("id_author"));
+            List<Topic> topics = Arrays.stream((String[]) resultSet.getArray("topics")
+                    .getArray()).map(Topic::valueOf).toList();
             return new Book(
                 resultSet.getString("id"),
                 resultSet.getString("book_name"),

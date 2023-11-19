@@ -8,11 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/AuthorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/AuthorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/model/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/model/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/repository/AuthorCrudOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/AuthorCrudOperations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/repository/BookCrudOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/BookCrudOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/repository/CrudOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/CrudOperations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +64,11 @@
   }
 }]]></component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <envs>
         <env name="DB_PASSWORD" value="123456" />
         <env name="DB_USERNAME" value="postgres" />
-        <env name="DB_URL" value="jdbc:postgresql://localhost:5432/library_management" />
+        <env name="DB_URL" value="jdbc:postgresql://localhost:5432/library_managment" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="Sanda.Main" />
       <module name="LibraryManagementImplementation" />
@@ -96,7 +93,6 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Database Script.test.sql" />
       </list>
     </recent_temporary>
@@ -116,7 +112,7 @@
       <workItem from="1700315567715" duration="1801000" />
       <workItem from="1700317625535" duration="364000" />
       <workItem from="1700330346911" duration="182000" />
-      <workItem from="1700395643280" duration="2074000" />
+      <workItem from="1700395643280" duration="3038000" />
     </task>
     <servers />
   </component>

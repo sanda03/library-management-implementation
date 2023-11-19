@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class AuthorTest {
-    public static void launchTest(){
+    public static void test(){
         AuthorCrudOperations authorCrudOperations = new AuthorCrudOperations();
 
         //Find all test
