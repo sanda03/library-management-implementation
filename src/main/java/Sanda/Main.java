@@ -1,6 +1,6 @@
 package Sanda;
 public class Main {
     public static void main(String[] args){
-        AuthorTest.test();
+        BookTest.test();
     }
 }

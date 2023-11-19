@@ -64,6 +64,15 @@ public class BookCrudOperations implements CrudOperations<Book> {
 
     @Override
     public Book delete(Book toDelete){
+        String query = "DELETE FROM \"book\" WHERE \"id\"=?;";
+        try {
+            PreparedStatement statement = databaseConnection.getConnection().prepareStatement(query);
+            statement.setString(1, toDelete.getId());
+            statement.executeUpdate();
+            return toDelete;
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
         return null;
     }
 }
