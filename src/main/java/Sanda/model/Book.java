@@ -10,8 +10,7 @@ import java.util.UUID;
 @Data
 @AllArgsConstructor
 public class Book {
-    private UUID id;
-    private String bookName;
+    private String id, bookName;
     private int pageNumbers;
     private Date releaseDate;
     private List<Topic> topics;

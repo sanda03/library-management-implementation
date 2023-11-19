@@ -9,13 +9,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 public class AuthorCrudOperations implements CrudOperations<Author>{
     final private DatabaseConnection databaseConnection = DatabaseConnection.getInstance();
     public static Author createAuthor(ResultSet resultSet) throws SQLException {
         return new Author(
-            UUID.fromString(resultSet.getString("id")),
+            resultSet.getString("id"),
             resultSet.getString("name"),
             Sex.valueOf(resultSet.getString("sex"))
         );
@@ -43,42 +42,52 @@ public class AuthorCrudOperations implements CrudOperations<Author>{
     @Override
     public List<Author> saveAll(List<Author> toSave){
         List<Author> authors = new ArrayList<>();
-        toSave.forEach(el -> {
-            try {
-                authors.add(this.save(el));
-            } catch (SQLException e) {
-                System.out.println(e.getMessage());
-            }
-        });
+        for (Author el : toSave) {
+            authors.add(this.save(el));
+        }
         return authors;
     }
 
     @Override
-    public Author save(Author toSave) throws SQLException {
+    public Author save(Author toSave){
         String query = Utils.insertQuery("author", List.of("name", "sex"));
-        PreparedStatement preparedStatement = databaseConnection.getConnection().prepareStatement(query);
-        preparedStatement.setString(1, toSave.getName());
-        preparedStatement.setString(2, toSave.getSex().toString());
-        preparedStatement.executeUpdate();
-        List<Author> authors = findAll();
-        return authors.get(authors.size() - 1);
+        try {
+            PreparedStatement preparedStatement = databaseConnection.getConnection().prepareStatement(query);
+            preparedStatement.setString(1, toSave.getName());
+            preparedStatement.setString(2, toSave.getSex().toString());
+            preparedStatement.executeUpdate();
+            List<Author> authors = findAll();
+            return authors.get(authors.size() - 1);
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return null;
     }
 
     @Override
-    public Author delete(Author toDelete) throws SQLException {
+    public Author delete(Author toDelete){
         String query = "DELETE FROM \"author\" WHERE \"id\"=?;";
-        PreparedStatement statement = databaseConnection.getConnection().prepareStatement(query);
-        statement.setObject(1, toDelete.getId());
-        statement.executeUpdate();
+        try {
+            PreparedStatement statement = databaseConnection.getConnection().prepareStatement(query);
+            statement.setString(1, toDelete.getId());
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
         return toDelete;
     }
 
-    public Author findOne(UUID id) throws SQLException {
+    public Author findOne(String id){
         String query = "SELECT * FROM \"author\" WHERE \"id\"=?;";
-        PreparedStatement statement = databaseConnection.getConnection().prepareStatement(query);
-        statement.setObject(1, id);
-        ResultSet resultSet = statement.executeQuery();
-        resultSet.next();
-        return createAuthor(resultSet);
+        try {
+            PreparedStatement statement = databaseConnection.getConnection().prepareStatement(query);
+            statement.setString(1, id);
+            ResultSet resultSet = statement.executeQuery();
+            resultSet.next();
+            return createAuthor(resultSet);
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return null;
     }
 }

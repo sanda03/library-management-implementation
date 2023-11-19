@@ -10,7 +10,6 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Author {
-    private UUID id;
-    private String name;
+    private String id, name;
     private Sex sex;
 }

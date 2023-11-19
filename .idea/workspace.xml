@@ -5,22 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="601fdced-441b-497e-9a31-b0c895cc34c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/create_table_subscriber.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/create_type_topic.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/984f06d0-ef33-452b-9ead-d989438e10f1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/984f06d0-ef33-452b-9ead-d989438e10f1/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/984f06d0-ef33-452b-9ead-d989438e10f1/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/984f06d0-ef33-452b-9ead-d989438e10f1/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/984f06d0-ef33-452b-9ead-d989438e10f1/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/AuthorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/AuthorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/model/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/repository/AuthorCrudOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/AuthorCrudOperations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/repository/BookCrudOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/BookCrudOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/create_author.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/create_table_author.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/create_book.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/create_table_book.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/init_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/use_extension.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/repository/CrudOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/repository/CrudOperations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +116,7 @@
       <workItem from="1700315567715" duration="1801000" />
       <workItem from="1700317625535" duration="364000" />
       <workItem from="1700330346911" duration="182000" />
-      <workItem from="1700395643280" duration="1031000" />
+      <workItem from="1700395643280" duration="2074000" />
     </task>
     <servers />
   </component>

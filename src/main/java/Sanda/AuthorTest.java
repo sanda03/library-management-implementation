@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class AuthorTest {
-    public static void launchTest() throws SQLException {
+    public static void launchTest(){
         AuthorCrudOperations authorCrudOperations = new AuthorCrudOperations();
 
         //Find all test
@@ -16,11 +16,7 @@ public class AuthorTest {
 
         //delete test
         authors.forEach(el -> {
-            try {
-                System.out.println("Deleted: " + authorCrudOperations.delete(el));
-            } catch (SQLException e) {
-                System.out.println(e.getMessage());
-            }
+            System.out.println("Deleted: " + authorCrudOperations.delete(el));
         });
         System.out.println(authorCrudOperations.findAll());
 
