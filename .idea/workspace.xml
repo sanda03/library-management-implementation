@@ -4,34 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="601fdced-441b-497e-9a31-b0c895cc34c2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/AuthorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/AuthorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/BookTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sanda/SubscriberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sanda/SubscriberTest.java" afterDir="false" />
+    <list default="true" id="1c06c4a1-0bbe-4c4f-977a-c8afa17314b7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Manifest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prog3-sanda.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sanda/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="2YKs0pl3ac62jMVGUlJac2dDDs7" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2YRhXOxaAXLUAtRwsE2ZzYPnyaJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,35 +43,28 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "TD1",
-    "last_opened_file_path": "/home/ricka/IdeaProjects/LibraryManagementImplementation",
+    "last_opened_file_path": "/home/ricka/IdeaProjects/prog3-sanda/libs/lombok.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/home/ricka/IdeaProjects/LibraryManagementImplementation/src/main/java/Sanda/Main.java",
+    "onboarding.tips.debug.path": "/home/ricka/IdeaProjects/prog3-sanda/src/Main.java",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
-    ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <envs>
-        <env name="DB_PASSWORD" value="123456" />
+        <env name="DB_PASSWORD" value="12345678" />
+        <env name="DB_URL" value="jdbc:postgresql://localhost:5432/library_management" />
         <env name="DB_USERNAME" value="postgres" />
-        <env name="DB_URL" value="jdbc:postgresql://localhost:5432/library_managment" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="Sanda.Main" />
-      <module name="LibraryManagementImplementation" />
+      <module name="prog3-sanda" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Sanda.*" />
@@ -82,37 +75,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
-      <script-file value="f62b0c9d-d019-459d-8eeb-8331b6dffac5/role/test.sql" />
-      <script-mode>FILE</script-mode>
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Database Script.test.sql" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Database Script.test.sql" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="601fdced-441b-497e-9a31-b0c895cc34c2" name="Changes" comment="" />
-      <created>1700285389978</created>
+      <changelist id="1c06c4a1-0bbe-4c4f-977a-c8afa17314b7" name="Changes" comment="" />
+      <created>1700494339377</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1700285389978</updated>
-      <workItem from="1700285391048" duration="27000" />
-      <workItem from="1700285789426" duration="680000" />
-      <workItem from="1700287011353" duration="20973000" />
-      <workItem from="1700311792289" duration="3172000" />
-      <workItem from="1700315567715" duration="1801000" />
-      <workItem from="1700317625535" duration="364000" />
-      <workItem from="1700330346911" duration="182000" />
-      <workItem from="1700395643280" duration="7777000" />
+      <updated>1700494339377</updated>
+      <workItem from="1700494340660" duration="889000" />
     </task>
     <servers />
   </component>

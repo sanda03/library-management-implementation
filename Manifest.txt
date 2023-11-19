@@ -1,0 +1,2 @@
+Main-Class: Main
+Class-Path: libs/lombok.jar libs/jdbc.jar

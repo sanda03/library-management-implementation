@@ -4,7 +4,6 @@ import Sanda.model.Author;
 import Sanda.model.Sex;
 import Sanda.repository.AuthorCrudOperations;
 
-import java.sql.SQLException;
 import java.util.List;
 
 public class AuthorTest {
